@@ -1,0 +1,57 @@
+.float-left {
+    float: left;
+}
+
+.content {
+    width: 100%;
+    border: 1px solid red;
+}
+
+.content-left {
+    width: 30%;
+    border: 1px solid red;
+}
+
+.content-left-box1 {
+    height: 150px;
+    border: 1px solid red;
+}
+
+.content-left-box2 {
+    height: 300px;
+    border: 1px solid red;
+}
+
+.content-left-box3 {
+    height: 300px;
+    border: 1px solid red;
+}
+
+.content-center {
+    width: 40%;
+    border: 1px solid red;
+}
+
+.content-center-box2 {
+    border: 1px solid red;
+}
+
+.content-right {
+    width: 28%;
+    border: 1px solid red;
+}
+
+.content-right-box1 {
+    height: 250px;
+    border: 1px solid red;
+}
+
+.content-right-box2 {
+    height: 250px;
+    border: 1px solid red;
+}
+
+.content-right-box3 {
+    height: 300px;
+    border: 1px solid red;
+}

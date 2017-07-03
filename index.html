@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" href="./index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-left float-left">
+            <div class="content-left-box1">
+                <div>实时统计</div>
+                <div><span>21</span><span>45</span><span>46</span></div>
+                <table>
+                    <tr>
+                        <td>单位用户数：</td>
+                        <td>765</td>
+                        <td>今日登陆数</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>个人用户数：</td>
+                        <td>7345</td>
+                        <td>今日登陆数：</td>
+                        <td>454</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="content-left-box2">
+                <div>热点词云</div>
+                <div id="tagbox">
+                    <a class="color3" href="#">劳动报酬</a>
+                    <a class="color3" href="#">就业创业</a>
+                    <a class="color3" href="#">劳动关系</a>
+                    <a class="color3" href="#">医疗保险</a>
+                    <a class="color3" href="#">事业单位人事管理</a>
+                    <a class="color3" href="#">养老保险</a>
+                    <a class="color3" href="#">人事考试</a>
+                    <a class="color3" href="#">社保综合</a>
+                    <a class="color3" href="#">专业技术人员管理</a>
+                    <a class="color3" href="#">网上申报</a>
+                    <a class="color3" href="#">公积金</a>
+                    <a class="color3" href="#">工伤保险</a>
+                    <a class="color3" href="#">人力资源</a>
+                </div>
+            </div>
+            <div class="content-left-box3">
+                <div>终端业务量占比</div>
+                <div id="zdyezb" style="height:300px;"></div>
+            </div>
+        </div>
+        <div class="content-center float-left">
+            <div>鄂州市人社公共服务监控平台</div>
+            <div>
+                <div>鄂州服务总量</div>
+                <div>949865</div>
+            </div>
+            <div class="content-center-box1" style="height:400px;" id="ezmap"></div>
+            <div class="content-center-box2">
+                <div>当月线上线下业务情况--<span>2017年6月</span></div>
+                <div id="dyxsxxyw" style="width:100%;height:300px;border:1px solid red;"></div>
+            </div>
+        </div>
+        <div class="content-right float-left">
+            <div class="content-right-box1">
+                <div>查询服务统计</div>
+                <table>
+                    <tr>
+                        <td>终端类型</td>
+                        <td>今日业务量</td>
+                        <td>当月业务量</td>
+                        <td>累计业务量</td>
+                    </tr>
+                    <tr>
+                        <td>单位网上经办</td>
+                        <td>12</td>
+                        <td>254</td>
+                        <td>1452</td>
+                    </tr>
+                    <tr>
+                        <td>网厅服务</td>
+                        <td>21</td>
+                        <td>221</td>
+                        <td>654</td>
+                    </tr>
+                    <tr>
+                        <td>自助一体机</td>
+                        <td>42</td>
+                        <td>454</td>
+                        <td>4212</td>
+                    </tr>
+                    <tr>
+                        <td>微信服务</td>
+                        <td>43</td>
+                        <td>4212</td>
+                        <td>15426</td>
+                    </tr>
+                    <tr>
+                        <td>app服务</td>
+                        <td>32</td>
+                        <td>845</td>
+                        <td>11452</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="content-right-box2">
+                <div>申报、申报服务统计</div>
+                <div id="sbfwtj" style="height:300px;"></div>
+            </div>
+            <div class="content-right-box3">
+                <div>线上线下业务分析<span>环比分析</span><span>同比分析</span></div>
+                <div id="xsxxyw" style="height:300px;"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="./js/echarts.js"></script>
+    <script type="text/javascript" src="./js/ezmap.js"></script>
+    <script type="text/javascript" src="./js/per.js"></script>
+    <script type="text/javascript" src="./script/ezinit.js"></script>
+    <script type="text/javascript" src="./script/calenderpie.js"></script>
+    <script type="text/javascript" src="./script/sbfwtj.js"></script>
+    <script type="text/javascript" src="./script/xsxxywfx.js"></script>
+</body>
+
+</html>
