@@ -1,57 +1,219 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0;
+}
+
 .float-left {
     float: left;
 }
 
+.float-right {
+    float: right;
+}
+
+.clear-both {
+    clear: both;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url("./img/starsky.png") no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+
 .content {
     width: 100%;
-    border: 1px solid red;
+    height: auto;
 }
 
 .content-left {
-    width: 30%;
-    border: 1px solid red;
+    width: 29%;
+    margin-right: 1%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 .content-left-box1 {
-    height: 150px;
-    border: 1px solid red;
+    height: 220px;
+}
+
+.content-box {
+    border: 1px solid #1ac1f8;
+    background: url("./img/BG.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;
 }
 
 .content-left-box2 {
-    height: 300px;
-    border: 1px solid red;
+    height: 250px;
 }
 
 .content-left-box3 {
     height: 300px;
-    border: 1px solid red;
 }
 
 .content-center {
     width: 40%;
-    border: 1px solid red;
+    margin-right: 1%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.content-center-box1 {
+    border: 1px solid #1ac1f8;
+    background: url("./img/BG2.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 6px;
 }
 
 .content-center-box2 {
-    border: 1px solid red;
+    height: 300px；
 }
 
 .content-right {
-    width: 28%;
-    border: 1px solid red;
+    width: 29%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 .content-right-box1 {
-    height: 250px;
-    border: 1px solid red;
+    height: 230px;
+    margin-bottom: 10px;
 }
 
 .content-right-box2 {
-    height: 250px;
-    border: 1px solid red;
+    height: 240px;
+    margin-bottom: 10px;
 }
 
 .content-right-box3 {
     height: 300px;
-    border: 1px solid red;
+}
+
+.box-title {
+    width: 100%;
+    height: 20px;
+    color: #17e5f4;
+    font-size: 14px;
+    text-indent: 50px;
+    line-height: 30px;
+}
+
+.now-date {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #beeefc;
+    border-radius: 5px;
+    text-align: center;
+    color: #7d8f90;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+}
+
+.left-table {
+    color: #17e5f4;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.left-table tr td {
+    border-bottom: 1px solid #17e5f4;
+}
+
+a {
+    text-decoration: none;
+}
+
+.number {
+    color: #fefb06;
+}
+
+.color0 {
+    color: #0103f4;
+}
+
+.color1 {
+    color: #ffffff;
+}
+
+.color2 {
+    color: #f3fe1c;
+}
+
+.color3 {
+    color: red;
+}
+
+#tagbox {
+    margin-top: 50px;
+}
+
+#tagbox a {
+    margin-right: 50px;
+}
+
+.title {
+    font-size: 24px;
+    color: #17e5f4;
+    border-bottom: 1px solid #17e5f4;
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.map-title {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 15px;
+}
+
+.map-numb {
+    font-size: 24px;
+}
+
+.cx-table {
+    width: 90%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.cx-table tr {
+    height: 30px;
+    line-height: 30px;
+}
+
+.cx-table tr td {
+    border-bottom: 1px solid #ffffff;
+}
+
+.cx-table .th {
+    border-bottom: 1px solid #17e5f4;
+    color: #17e5f4;
 }

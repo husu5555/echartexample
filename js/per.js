@@ -1,5 +1,5 @@
-var myChart = echarts.init(document.getElementById('zdyezb'));
-option = {
+var myChart1 = echarts.init(document.getElementById('zdyezb'));
+option1 = {
     tooltip: {
         trigger: 'item',
         formatter: "{a} <br/>{b} : {c} ({d}%)"
@@ -7,6 +7,11 @@ option = {
     legend: {
         orient: 'vertical',
         left: 'left',
+        top: '20',
+        orient: 'horizontal',
+        textStyle: {
+            color: '#fff',
+        },
         data: ['单位网上经办', '网厅服务', '微信服务', '自助一体机', 'APP服务']
     },
     series: [{
@@ -30,4 +35,4 @@ option = {
         }
     }]
 };
-myChart.setOption(option);
+myChart1.setOption(option1);

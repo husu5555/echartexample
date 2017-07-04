@@ -1,10 +1,10 @@
 var myChart = echarts.init(document.getElementById('dyxsxxyw'));
-var cellSize = [80, 80];
-var pieRadius = 30;
+var cellSize = [60, 40];
+var pieRadius = 18;
 
 function getVirtulData() {
-    var date = +echarts.number.parseDate('2017-02-01');
-    var end = +echarts.number.parseDate('2017-03-01');
+    var date = +echarts.number.parseDate('2017-06-01');
+    var end = +echarts.number.parseDate('2017-07-01');
     var dayTime = 3600 * 24 * 1000;
     var data = [];
     for (var time = date; time < end; time += dayTime) {
@@ -31,9 +31,8 @@ function getPieSeries(scatterData, chart) {
             },
             radius: pieRadius,
             data: [
-                { name: '工作', value: Math.round(Math.random() * 24) },
-                { name: '娱乐', value: Math.round(Math.random() * 24) },
-                { name: '睡觉', value: Math.round(Math.random() * 24) }
+                { name: '线上业务量', value: Math.round(Math.random() * 24) },
+                { name: '线下业务量', value: Math.round(Math.random() * 24) }
             ]
         };
     });
@@ -54,8 +53,13 @@ var scatterData = getVirtulData();
 option = {
     tooltip: {},
     legend: {
-        data: ['工作', '娱乐', '睡觉'],
-        bottom: 20
+        data: ['线上业务量', '线下业务量'],
+        orient: 'vertical',
+        right: 20,
+        bottom: 30,
+        textStyle: {
+            color: '#ffffff'
+        }
     },
     calendar: {
         top: 'middle',
@@ -69,14 +73,20 @@ option = {
             }
         },
         dayLabel: {
-            margin: 20,
+            margin: 5,
             firstDay: 1,
-            nameMap: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+            nameMap: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
+            textStyle: {
+                color: '#ffffff'
+            }
         },
         monthLabel: {
-            show: false
+            show: true,
+            textStyle: {
+                color: '#ffffff'
+            }
         },
-        range: ['2017-02']
+        range: ['2017-06']
     },
     series: [{
         id: 'label',
@@ -99,7 +109,7 @@ option = {
         data: scatterData
     }]
 };
-
+myChart.setOption(option);
 if (!echarts.inNode) {
     var pieInitialized;
     setTimeout(function() {
@@ -117,4 +127,3 @@ if (!echarts.inNode) {
         }
     };
 }
-myChart.setOption(option);

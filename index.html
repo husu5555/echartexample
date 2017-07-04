@@ -10,68 +10,74 @@
 <body>
     <div class="content">
         <div class="content-left float-left">
-            <div class="content-left-box1">
-                <div>实时统计</div>
-                <div><span>21</span><span>45</span><span>46</span></div>
-                <table>
+            <div class="content-left-box1 content-box">
+                <div class="box-title">实时统计</div>
+                <div class="float-right">
+                    <div class="now-date">21</div>
+                    <div class="now-date">45</div>
+                    <div class="now-date">46</div>
+                </div>
+                <table class="clear-both left-table" cellspacing="0" cellpadding="0">
                     <tr>
-                        <td>单位用户数：</td>
-                        <td>765</td>
+                        <td>单位用户数</td>
+                        <td class="number">765</td>
                         <td>今日登陆数</td>
-                        <td>25</td>
+                        <td class="number">25</td>
                     </tr>
                     <tr>
-                        <td>个人用户数：</td>
-                        <td>7345</td>
-                        <td>今日登陆数：</td>
-                        <td>454</td>
+                        <td>个人用户数</td>
+                        <td class="number">7345</td>
+                        <td>今日登陆数</td>
+                        <td class="number">454</td>
                     </tr>
                 </table>
             </div>
-            <div class="content-left-box2">
-                <div>热点词云</div>
+            <div class="content-left-box2 content-box">
+                <div class="box-title">热点词云</div>
                 <div id="tagbox">
                     <a class="color3" href="#">劳动报酬</a>
-                    <a class="color3" href="#">就业创业</a>
-                    <a class="color3" href="#">劳动关系</a>
-                    <a class="color3" href="#">医疗保险</a>
-                    <a class="color3" href="#">事业单位人事管理</a>
-                    <a class="color3" href="#">养老保险</a>
-                    <a class="color3" href="#">人事考试</a>
+                    <a class="color2" href="#">就业创业</a>
+                    <a class="color0" href="#">劳动关系</a>
+                    <a class="color0" href="#">医疗保险</a>
+                    <a class="color1" href="#">事业单位人事管理</a>
+                    <a class="color0" href="#">养老保险</a>
+                    <a class="color2" href="#">人事考试</a>
                     <a class="color3" href="#">社保综合</a>
-                    <a class="color3" href="#">专业技术人员管理</a>
-                    <a class="color3" href="#">网上申报</a>
-                    <a class="color3" href="#">公积金</a>
-                    <a class="color3" href="#">工伤保险</a>
-                    <a class="color3" href="#">人力资源</a>
+                    <a class="color0" href="#">专业技术人员管理</a>
+                    <a class="color2" href="#">网上申报</a>
+                    <a class="color0" href="#">公积金</a>
+                    <a class="color1" href="#">工伤保险</a>
+                    <a class="color1" href="#">人力资源</a>
                 </div>
             </div>
-            <div class="content-left-box3">
-                <div>终端业务量占比</div>
-                <div id="zdyezb" style="height:300px;"></div>
+            <div class="content-left-box3 content-box">
+                <div class="box-title">终端业务量占比</div>
+                <div id="zdyezb" style="height:240px;"></div>
             </div>
         </div>
         <div class="content-center float-left">
-            <div>鄂州市人社公共服务监控平台</div>
-            <div>
-                <div>鄂州服务总量</div>
-                <div>949865</div>
+            <div class="title">鄂州市人社公共服务监控平台</div>
+            <div class="content-center-box1">
+                <div class="float-right map-title">
+                    <div>鄂州服务总量</div>
+                    <div class="number map-numb">949865</div>
+                </div>
+                <div style="height:380px;" id="ezmap" class="clear-both"></div>
             </div>
-            <div class="content-center-box1" style="height:400px;" id="ezmap"></div>
-            <div class="content-center-box2">
-                <div>当月线上线下业务情况--<span>2017年6月</span></div>
-                <div id="dyxsxxyw" style="width:100%;height:300px;border:1px solid red;"></div>
+            <div class="content-center-box2 content-box">
+                <div class="box-title">当月线上线下业务情况--<span>2017年6月</span></div>
+                <div id="dyxsxxyw" style="height:280px;" class="clear-both"></div>
             </div>
         </div>
         <div class="content-right float-left">
-            <div class="content-right-box1">
-                <div>查询服务统计</div>
-                <table>
+            <div class="content-right-box1 content-box">
+                <div class="box-title">查询服务统计</div>
+                <table cellspacing="0" cellpadding="0" class="cx-table">
                     <tr>
-                        <td>终端类型</td>
-                        <td>今日业务量</td>
-                        <td>当月业务量</td>
-                        <td>累计业务量</td>
+                        <td class="th">终端类型</td>
+                        <td class="th">今日业务量</td>
+                        <td class="th">当月业务量</td>
+                        <td class="th">累计业务量</td>
                     </tr>
                     <tr>
                         <td>单位网上经办</td>
@@ -105,24 +111,31 @@
                     </tr>
                 </table>
             </div>
-            <div class="content-right-box2">
-                <div>申报、申报服务统计</div>
-                <div id="sbfwtj" style="height:300px;"></div>
+            <div class="content-right-box2 content-box">
+                <div class="box-title">申报、申报服务统计</div>
+                <div id="sbfwtj" style="height:250px;"></div>
             </div>
-            <div class="content-right-box3">
-                <div>线上线下业务分析<span>环比分析</span><span>同比分析</span></div>
-                <div id="xsxxyw" style="height:300px;"></div>
+            <div class="content-right-box3 content-box">
+                <div class="box-title">线上线下业务分析
+                    <div class="float-right"><span>环比分析</span><span>同比分析</span></div>
+                </div>
+                <div id="xsxxyw" style="height:280px;"></div>
             </div>
         </div>
+        <div class="clear-both"></div>
     </div>
     <script type="text/javascript" src="./js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="./js/echarts.js"></script>
+    <script type="text/javascript" src="./script/calenderpie.js"></script>
     <script type="text/javascript" src="./js/ezmap.js"></script>
+    <script type="text/javascript" src="./js/reci.js"></script>
     <script type="text/javascript" src="./js/per.js"></script>
     <script type="text/javascript" src="./script/ezinit.js"></script>
-    <script type="text/javascript" src="./script/calenderpie.js"></script>
     <script type="text/javascript" src="./script/sbfwtj.js"></script>
     <script type="text/javascript" src="./script/xsxxywfx.js"></script>
+    <script type="text/javascript">
+        initReci();
+    </script>
 </body>
 
 </html>

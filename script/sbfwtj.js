@@ -1,23 +1,31 @@
-var myChart = echarts.init(document.getElementById('sbfwtj'));
-option = {
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {
-            type: 'cross',
-            crossStyle: {
-                color: '#999'
-            }
-        }
-    },
-    legend: {
-        data: ['蒸发量', '平均温度']
-    },
+var myChart3 = echarts.init(document.getElementById('sbfwtj'));
+var colors = ['#5793f3', '#d14a61'];
+option3 = {
+    color: colors,
     xAxis: [{
         type: 'category',
         name: '日期',
-        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月'],
+        data: ['06-17', '06-18', '06-19', '06-20', '06-21', '06-22', '06-23', '06-24', '06-25', '06-26'],
         axisPointer: {
-            type: 'shadow'
+            type: 'shadow',
+
+        },
+        nameLocation: 'start',
+        nameTextStyle: {
+            color: '#ffffff'
+        },
+        axisLabel: {
+            show: true,
+            textStyle: {
+                color: '#fff',
+                fontSize: '10'
+            },
+            rotate: 30
+        },
+        axisLine: {
+            lineStyle: {
+                color: "#fff"
+            }
         }
     }],
     yAxis: [{
@@ -27,8 +35,28 @@ option = {
             max: 500,
             interval: 100,
             axisLabel: {
-                formatter: '{value}'
+                formatter: '{value}',
+                lineStyle: {
+                    color: "#fff"
+                }
+            },
+            nameTextStyle: {
+                color: '#fff',
+                fontSize: 10
+            },
+            axisLabel: {
+                show: true,
+                textStyle: {
+                    color: '#fff'
+                },
+
+            },
+            axisLine: {
+                lineStyle: {
+                    color: "#fff"
+                }
             }
+
         },
         {
             type: 'value',
@@ -37,17 +65,34 @@ option = {
             max: 50,
             interval: 10,
             axisLabel: {
-                formatter: '{value}'
+                formatter: '{value}',
+                lineStyle: {
+                    color: "#fff"
+                }
+            },
+            nameTextStyle: {
+                color: '#fff'
+            },
+            axisLabel: {
+                show: true,
+                textStyle: {
+                    color: '#fff'
+                }
+            },
+            axisLine: {
+                lineStyle: {
+                    color: "#fff"
+                }
             }
         }
     ],
     series: [{
-            name: '蒸发量',
+            name: '申报服务访问次数',
             type: 'bar',
             data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0]
         },
         {
-            name: '平均温度',
+            name: '查询服务访问次数',
             type: 'line',
             yAxisIndex: 1,
             data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5]
@@ -55,4 +100,4 @@ option = {
     ]
 };
 
-myChart.setOption(option);
+myChart3.setOption(option3);
