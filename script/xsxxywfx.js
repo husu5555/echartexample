@@ -25,7 +25,8 @@ option4 = {
                 color: '#fff',
                 fontSize: '10'
             },
-            rotate: 30
+            interval: 0,
+            rotate: -30
         },
         axisLine: {
             lineStyle: {
