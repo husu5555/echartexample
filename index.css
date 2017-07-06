@@ -34,7 +34,7 @@ img {
 }
 
 html {
-    background: url("./img/starsky.png") no-repeat;
+    background: #000C37 url("./img/starsky.png") no-repeat;
     background-size: 100% 120%;
 }
 
