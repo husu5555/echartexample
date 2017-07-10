@@ -46,6 +46,11 @@ body {
 
 .content {
     width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     height: auto;
 }
 
@@ -166,30 +171,6 @@ a {
     color: #fefb06;
 }
 
-.color0 {
-    color: #0103f4;
-}
-
-.color1 {
-    color: #ffffff;
-}
-
-.color2 {
-    color: #f3fe1c;
-}
-
-.color3 {
-    color: red;
-}
-
-#tagbox {
-    margin-top: 50px;
-}
-
-#tagbox a {
-    margin-right: 50px;
-}
-
 .title {
     font-size: 24px;
     color: #17e5f4;
@@ -230,46 +211,75 @@ a {
     color: #17e5f4;
 }
 
-.left-top-img {
+.edges-img-common {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background: url("./img/left-top.png") no-repeat;
-    background-size: 20px 20px;
+    width: 15px;
+    height: 15px;
+}
+
+.left-top-img {
+    border-left: 5px solid #17e5f4;
+    border-top: 5px solid #17e5f4;
     left: -1px;
     top: -1px;
 }
 
 .left-bottom-img {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: url("./img/left-bottom.png") no-repeat;
-    background-size: 20px 20px;
+    border-left: 5px solid #17e5f4;
+    border-bottom: 5px solid #17e5f4;
     left: -1px;
     bottom: -1px;
 }
 
 .right-top-img {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: url("./img/right-top.png") no-repeat;
-    background-size: 20px 20px;
+    border-right: 5px solid #17e5f4;
+    border-top: 5px solid #17e5f4;
     right: -1px;
     top: -1px;
 }
 
 .right-bottom-img {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: url("./img/right-bottom.png") no-repeat;
-    background-size: 20px 20px;
+    border-right: 5px solid #17e5f4;
+    border-bottom: 5px solid #17e5f4;
     right: -1px;
     bottom: -1px;
 }
 
 .mgr-10 {
     margin-right: 10px;
+}
+
+#tagbox {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    margin: 0 auto;
+}
+
+#tagbox a {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Microsoft YaHei;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 6px;
+}
+
+#tagbox a:hover {
+    border: 1px solid #eee;
+    background: #FFF;
+}
+
+#tagbox .blue {
+    color: blue;
+}
+
+#tagbox .red {
+    color: red;
+}
+
+#tagbox .green {
+    color: green;
 }

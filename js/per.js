@@ -1,5 +1,7 @@
 var myChart1 = echarts.init(document.getElementById('zdyezb'));
+var colors = ['#5793f3', '#d14a61', '#61a0a8', '#d48265', '#91c7ae'];
 option1 = {
+    color: colors,
     tooltip: {
         trigger: 'item',
         formatter: "{a} <br/>{b} : {c} ({d}%)"
@@ -25,6 +27,7 @@ option1 = {
             { value: 1414, name: '微信服务' },
             { value: 412, name: '自助一体机' },
             { value: 1542, name: 'APP服务' }
+
         ],
         itemStyle: {
             emphasis: {

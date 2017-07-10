@@ -45,6 +45,7 @@ option3 = {
                 color: '#fff',
                 fontSize: 10
             },
+            nameRotate: 1,
             axisLabel: {
                 show: true,
                 textStyle: {
@@ -74,6 +75,7 @@ option3 = {
             nameTextStyle: {
                 color: '#fff'
             },
+            nameRotate: -1,
             axisLabel: {
                 show: true,
                 textStyle: {
