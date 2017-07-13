@@ -92,7 +92,10 @@ body {
 }
 
 .content-center-box1 {
-    position: relative;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
     border: 1px solid #1ac1f8;
     background-size: 100% 100%;
     margin-top: 6px;
@@ -282,4 +285,12 @@ a {
 
 #tagbox .green {
     color: green;
+}
+
+.content-center-top {
+    height: 494px;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
